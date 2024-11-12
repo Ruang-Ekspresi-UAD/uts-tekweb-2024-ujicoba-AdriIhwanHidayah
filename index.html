@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page Appearance</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Page Appearance</h1>
+
+    <label for="backgroundColor">Change Background Color:</label>
+    <select id="backgroundColor">
+        <option value="white">White</option>
+        <option value="lightgray">Light Gray</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+    </select>
+    <br><br>
+
+    <label for="fontSize">Change Font Size:</label>
+    <input type="range" id="fontSize" min="10" max="30" value="16">
+    <span id="fontSizeValue">16px</span>
+    <br><br>
+
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
+    <br><br>
+
+    <label for="fontStyle">Change Font Style:</label>
+    <select id="fontStyle">
+        <option value="sans-serif">Sans-serif</option>
+        <option value="serif">Serif</option>
+    </select>
+
+    <script src="script.js"></script>
+</body>
+</html>
